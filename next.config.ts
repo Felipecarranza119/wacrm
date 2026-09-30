@@ -64,6 +64,8 @@ const SECURITY_HEADERS = [
 ] as const;
 
 const nextConfig: NextConfig = {
+   // Desactiva el compilador nativo de Linux para usar la versión compatible con Hostinger
+  swcMinify: false,
   // Emit a self-contained server bundle (.next/standalone) so the
   // Docker image can run without node_modules or the Next CLI.
   // Harmless outside Docker: `next start` keeps working as before.
