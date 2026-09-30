@@ -1,3 +1,7 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // 1. Mantener la exportación aislada que requiere el software
@@ -18,4 +22,4 @@ const nextConfig = {
   ],
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);
