@@ -30,7 +30,7 @@
   "packageManager": "npm@10.9.9",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "NODE_OPTIONS='--no-experimental-fetch' next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
