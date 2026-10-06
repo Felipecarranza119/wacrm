@@ -5,7 +5,6 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // 1. Mantener la exportación aislada que requiere el software
-  output: "standalone",
 
   // 2. Mantener los accesos de desarrollo permitidos por WaCRM
   allowedDevOrigins: [
